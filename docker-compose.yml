@@ -1,0 +1,8 @@
+---
+services:
+  cloud-bot:
+    container_name: cloud-bot
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: ./src/.env
