@@ -31,4 +31,6 @@ STREAM_LOGS=True # Allows us to stream logs to STDOUT. Good for visibility.
 2. `python /src/__main__.py`
 
 ##### With Docker
-```TODO```
+- To run: `docker compose up -d`
+- To see logs: `docker logs cloud-bot` or `docker logs -f cloud_bot`
+- To rebuild with changes: `docker compose up -d --build cloud_bot`
