@@ -3,11 +3,12 @@ import discord
 from discord.ext import commands
 
 
+
 # We add our logger to the cog.
 logger = logging.getLogger(__name__)
 
 
-class Ping(commands.Cog):
+class Healthcheck(discord.ext.commands.Cog):
     """
     All cogs are added into their own class.
     If an error occurs in the cog, the cog itself will fail and restart.
@@ -28,4 +29,4 @@ class Ping(commands.Cog):
 
 async def setup(bot: commands.Bot) -> None:
     """ Cogs setup functions are mandatory for cog initialization"""
-    await bot.add_cog(Ping(bot))
+    await bot.add_cog(Healthcheck(bot))
